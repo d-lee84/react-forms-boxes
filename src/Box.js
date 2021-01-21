@@ -1,4 +1,3 @@
-
 /** Rendering of the Box component 
  * 
  * Props:
@@ -11,3 +10,18 @@
  * BoxList -> Box
  */
 
+function Box({ height, width, backgroundColor, removeBox }){
+  return (
+    <div className="Box-container">
+      <div className="Box"
+        style={{ width, height, backgroundColor }}>
+      </div>
+      <button className="Box-remove-btn"
+      onClick={removeBox}>
+        Remove The Box!
+      </button>
+    </div>
+  )
+}
+
+export default Box;

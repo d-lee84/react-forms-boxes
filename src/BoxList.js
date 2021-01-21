@@ -36,6 +36,7 @@ function BoxList() {
 
   let renderBoxes = boxes.map((b) => (
     <Box 
+      key={b.id}
       height={b.height} 
       width={b.width} 
       backgroundColor={b.backgroundColor}
